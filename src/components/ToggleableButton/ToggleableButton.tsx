@@ -53,7 +53,7 @@ export const ToggleableButton = memo((props: ToggleableButton) => {
   )
 
   const handleSave = useCallback(() => {
-    if (!textAreaValue) return
+    if (!textAreaValue.trim()) return
     onSave?.(textAreaValue)
     setTextAreaValue('')
 

@@ -18,7 +18,7 @@ export const ToggleableInput = memo((props: ToggleableInputProps) => {
   }, [])
 
   const handleClose = useCallback(() => {
-    if (!text) return
+    if (!text.trim()) return
     onClose?.(text)
     setOpen(false)
   }, [onClose, text])

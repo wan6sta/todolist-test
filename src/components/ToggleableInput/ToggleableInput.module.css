@@ -1,3 +1,4 @@
 .ToggleableInputText {
     word-break: break-all;
+    cursor: pointer;
 }
